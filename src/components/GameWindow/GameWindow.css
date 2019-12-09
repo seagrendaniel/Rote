@@ -1,3 +1,13 @@
 .game-window {
+    display: flex;
+    /* height: 640px; */
+    /* width: 480px; */
+    justify-items: right;
+}
+
+canvas {
     border: 1px solid black;
+    height: 640px;
+    width: 480px;
+    margin: 20px auto 100px auto;
 }
