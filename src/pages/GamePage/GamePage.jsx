@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GameWindow from '../../components/GameWindow/GameWindow';
 
 import './GamePage.css';
 
 const GamePage = (props) => {
+
     return (
         <>
         <h1 className="title"> Welcome to Rote </h1>
@@ -12,9 +14,7 @@ const GamePage = (props) => {
                 <h3> Rote </h3>
             </div>
             <div>
-                <canvas>
-                    {/* Canvas Area here*/} 
-                </canvas>
+                <GameWindow />
             </div>
         </div>
         </>
