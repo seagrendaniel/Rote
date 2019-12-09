@@ -6,7 +6,7 @@ import './GamePage.css';
 const GamePage = (props) => {
     return (
         <>
-        <h1>Welcome to Rote</h1>
+        <h1 className="title"> Welcome to Rote </h1>
         <div>
             <div className="game-title">
                 <h3> Rote </h3>
