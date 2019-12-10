@@ -19,6 +19,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "parser": "babel-eslint",
   "plugins": [
     "react",
     "jest"
@@ -39,6 +40,8 @@
         "maxEOF": 1,
         "maxBOF": 0
       }
-    ]
+    ],
+    "react/state-in-constructor": 0,
+    "no-unused-vars": "warn"
   }
 }
