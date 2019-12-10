@@ -1,16 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import './GameWindow.css';
 
 class GameWindow extends Component {
-
-    render() {
-        return (
-            <div>
-                <canvas ref="canvas" className="game-window"></canvas>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="game-window">
+        <canvas ref="canvas" />
+      </div>
+    );
+  }
 }
 
 export default GameWindow;

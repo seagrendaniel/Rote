@@ -9,7 +9,7 @@ const GamePage = props => (
     <h1 className="title"> Welcome to Rote </h1>
     <div>
       <div className="game-title">
-        <h3> Rote </h3>
+        <button type="button" className="start-button"> Click Here to start </button>
       </div>
       <div>
         <GameWindow />
