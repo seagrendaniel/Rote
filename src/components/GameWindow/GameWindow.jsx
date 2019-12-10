@@ -3,15 +3,20 @@ import React, { Component } from 'react';
 import './GameWindow.css';
 
 class GameWindow extends Component {
-  state = {
-    ref: 'canvas'
-  };
+  constructor(props) {
+    super(props);
+    this.canvasRef = React.createRef();
+  }
+
+  componentDidMount() {
+    const { canvas } = this.canvasRef;
+    const ctx = canvas.getContext('2d');
+  }
 
   render() {
-    const { ref } = this.state;
     return (
       <div className="game-window">
-        <canvas ref={ref} />
+        <canvas ref={this.canvasRef} />
       </div>
     );
   }
